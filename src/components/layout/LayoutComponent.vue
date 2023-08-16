@@ -1,6 +1,7 @@
 <template>
   <div :class="['pace-done', { 'sidebar-hide': isSidebarOpen }]">
     <SidebarComponent />
+
     <HeaderComponent />
     <div class="content-wrap">
       <div class="main">
@@ -27,7 +28,13 @@ export default {
   computed: {
     ...mapState(['isSidebarOpen'])
   },
-  components: { SidebarComponent, HeaderComponent, FooterComponent, RouterView, BreadComponent }
+  components: {
+    SidebarComponent,
+    HeaderComponent,
+    FooterComponent,
+    RouterView,
+    BreadComponent
+  }
 }
 </script>
 
