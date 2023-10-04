@@ -16,15 +16,11 @@
 </template>
 
 <script>
-import { RouterLink, useRoute, useRouter } from 'vue-router'
+import { RouterLink } from 'vue-router'
 import { mapState } from 'vuex'
 import SidebarMenu from '../sidebar/SidebarMenu.vue'
 
 export default {
-  setup() {
-    const router = useRouter()
-    const route = useRoute()
-  },
   components: { RouterLink, SidebarMenu },
   name: 'SidebarComponent',
   data() {

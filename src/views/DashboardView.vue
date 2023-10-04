@@ -5,7 +5,8 @@
         <div class="card">
           <div class="stat-widget-one">
             <div class="stat-icon dib">
-              <ThemifyIcon icon="money" class="color-primary border-primary" />
+              <font-awesome-icon icon="fa-solid fa-dollar-sign" />
+              <!-- <ThemifyIcon icon="money" class="color-primary border-primary" /> -->
             </div>
             <div class="stat-content dib">
               <div class="stat-text">Total Profit</div>
@@ -18,7 +19,8 @@
         <div class="card">
           <div class="stat-widget-one">
             <div class="stat-icon dib">
-              <ThemifyIcon icon="user" class="color-primary border-primary" />
+              <font-awesome-icon icon="fa-solid fa-user" />
+              <!-- <ThemifyIcon icon="user" class="color-primary border-primary" /> -->
             </div>
             <div class="stat-content dib">
               <div class="stat-text">New Customer</div>
@@ -31,7 +33,8 @@
         <div class="card">
           <div class="stat-widget-one">
             <div class="stat-icon dib">
-              <ThemifyIcon icon="layout-grid2" class="color-primary border-primary" />
+              <font-awesome-icon icon="fa-solid fa-border-all" />
+              <!-- <ThemifyIcon icon="layout-grid2" class="color-primary border-primary" /> -->
             </div>
             <div class="stat-content dib">
               <div class="stat-text">Active Projects</div>
@@ -44,7 +47,7 @@
         <div class="card">
           <div class="stat-widget-one">
             <div class="stat-icon dib">
-              <ThemifyIcon icon="link" class="color-primary border-primary" />
+              <font-awesome-icon icon="fa-solid fa-link" />
             </div>
             <div class="stat-content dib">
               <div class="stat-text">Referral</div>
@@ -599,15 +602,17 @@
 </template>
 
 <script>
-import ThemifyIcon from 'vue-themify-icons'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faLink } from '@fortawesome/free-solid-svg-icons'
 import CalenderComponent from '../components/pages/dashboard/CalenderComponent.vue'
 import ExpensesComponent from '../components/pages/dashboard/ExpensesComponent.vue'
 import PieChart from '../components/pages/dashboard/PieChart.vue'
 import TestimonialComponent from '../components/pages/dashboard/TestimonialComponent.vue'
 
+library.add(faLink)
+
 export default {
   components: {
-    ThemifyIcon,
     ExpensesComponent,
     PieChart,
     TestimonialComponent,
